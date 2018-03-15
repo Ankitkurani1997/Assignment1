@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pch-g
+  labels:
+    app: web
+spec:
+  containers:
+    - name: rss-reader
+      image: ankit1997/get-started:part2
+      ports:
+        - containerPort: 88
